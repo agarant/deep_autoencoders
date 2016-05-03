@@ -1,14 +1,15 @@
-Everytime cae.py or dae.py is run the result is saved in ./experiment/config_of_experiment. 
 
-The codes are built to run on a gpu, the following page explains how to install everything related to running theano on gpu
-http://deeplearning.net/software/theano/tutorial/using_gpu.html
+### Implementations of deep autoencoders in Theano/Lasagne.
+  - dae.py -> Deep autoencoder (fully connected) pre-trained with stacked denoising autoencoders. (Theano only)
+  - cae.py -> Deep convolutionnal autoencoder. (Using Lasagne)
 
-The file my_conda_env.yml is the conda environment I used to run my tests. It definitely contains some unneeded depencies, but everything is in there.
+The [Deeplearning tutorial](https://github.com/lisa-lab/DeepLearningTutorials) denoising autoencoder (dA.py) is used to pre-train the deep autoencoder.
 
-dae.py is deep autoencoder - > Implemented only on Theano 
-cae.py is the deep convolutionnal autoencoder -> Implemented with the help of Lasagne
+The implementations are flexible so that the network configuration can easily be changed. Experiments results are saved in: ./experiment/config_of_experiment. 
 
-cae.py additionnaly requires Lasagne
- - pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
- - pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+### Usage
+The autoencoders are built to run on a gpu, the following [page](http://deeplearning.net/software/theano/tutorial/using_gpu.html) explains how to install everything related to running theano on gpu.
+
+The file my_conda_env.yml is the conda environment I used to run my tests. It contains some unneeded dependencies, but everything is in there. To install the environement simply use:
+>conda env create -f my_conda_env.yml
 
