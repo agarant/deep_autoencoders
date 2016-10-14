@@ -13,3 +13,10 @@ The autoencoders are built to run on a gpu, the following [page](http://deeplear
 The file my_conda_env.yml is the conda environment I used to run my tests. It contains some unneeded dependencies, but everything is in there. To install the environement simply use:
 >conda env create -f my_conda_env.yml
 
+## Results
+
+Here are some figures from my experiments. For more details, see: exploration_of_deep_autoencoders_architectures_for_dimensionality_reduction.pdf
+
+![Alt text](/reconstructions.png?raw=true "Reconstructions")
+
+![Alt text](/2d-visualization.png?raw=true "2d Visualisations")
